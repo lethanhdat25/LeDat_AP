@@ -6,20 +6,27 @@ namespace T2008M_AP.All_AP.ss1
     {
         public static void Main(string[] args)
         {
-            Product product = new Product();
-            product.id = 0;
-            product.name = "sp1";
-            product.price = 123.23;
-            product.qty = 0;
-            product.image = "fgscf";
-            product.desc = "qdfa";
-            product.gallery.Add("anh1");
-            product.gallery.Add("anh2");
+            int id = 0;
+            Console.WriteLine("moi ban nhap ten:");
+            var name=Console.ReadLine();
+            
+            Console.WriteLine("moi ban nhap so luong");
+            int qty=Convert.ToInt32(Console.ReadLine());
+            
+            Console.WriteLine("moi ban nhap ten anh");
+            var image=Console.ReadLine();
+            
+            Console.WriteLine("moi ban nhap gia tien");
+            var giatien=Convert.ToSingle(Console.ReadLine());
+            
+            Console.WriteLine("moi ban nhap desc");
+            var descs=Console.ReadLine();
+            Product product = new Product(id, qty, name, descs, image, giatien);
+            
+            product.gallery.Add(product.name);
             product.GetInfo();
             Console.WriteLine((product.CheckQty(product.qty))?"con hang":"het hang");
-            Console.WriteLine("Nhap ten anh muon them:");
-            var a=Console.ReadLine();
-            product.AddImage(a);
+            product.AddImage(product.image);
         }
 
     }
