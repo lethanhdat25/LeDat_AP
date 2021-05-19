@@ -29,7 +29,7 @@ namespace T2008M_AP.All_AP.ss1
            Console.WriteLine(id+name+price+qty+desc+image); 
         }
 
-        public bool CheckQty(int qty)
+        public virtual bool CheckQty(int qty)
         {
             return (qty>0)?true:false;
         }
