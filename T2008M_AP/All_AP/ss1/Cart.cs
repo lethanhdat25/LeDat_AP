@@ -34,7 +34,7 @@ namespace T2008M_AP.All_AP.ss1
             Console.WriteLine("Danh sach cac san pham:");
             foreach (var VARIABLE in productList)
             {
-                Console.WriteLine(VARIABLE.name);
+                Console.WriteLine(VARIABLE.name );
                 grandTotal += VARIABLE.price;
             }
             if (this.country=="VietNam")

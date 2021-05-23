@@ -12,7 +12,7 @@ namespace T2008M_AP.All_AP.ss1
             var rs= base.CheckQty(qty);
             if (rs)
             {
-                Console.WriteLine("Tronog kho con mau :"+this.mausac+" va size :"+this.kichco);
+                Console.WriteLine("Trong kho con mau :"+this.mausac+" va size :"+this.kichco);
                 return rs;
             }
 

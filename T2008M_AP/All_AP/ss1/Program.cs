@@ -39,7 +39,7 @@ namespace T2008M_AP.All_AP.ss1
 
             Cart cart = new Cart();
             cart.customer = "dat";
-            cart.city = "HN";
+            cart.city = "hhh";
             cart.country = "VietNam";
             cart.AddProduct(product);
             cart.GrandTotal();
