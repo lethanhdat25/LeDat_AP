@@ -27,12 +27,12 @@ namespace T2008M_AP.All_AP.ss1
             product.GetInfo();
             Console.WriteLine((product.CheckQty(product.qty))?"con hang":"het hang");
             product.AddImage(product.image);
-
+            
             Fashion fs = new Fashion();
             fs.kichco = "M";
             fs.mausac = "mau do";
             fs.CheckQty(product.qty);
-
+            
             Diamon diamon = new Diamon();
             diamon.cara = 44;
             diamon.CheckQty(diamon.cara);

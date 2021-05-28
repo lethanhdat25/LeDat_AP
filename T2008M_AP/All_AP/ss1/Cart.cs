@@ -7,13 +7,31 @@ namespace T2008M_AP.All_AP.ss1
     {
         public int id;
         public string customer,city,country;
+
+        public delegate void CheckThemSP();
+
+        public event CheckThemSP EventThemSP;
+
+        public Cart()
+        {
+            if (EventThemSP==null)
+            {
+                EventThemSP += UpdateSP;
+            }
+        }
+        
+        public void UpdateSP()
+        {
+            Console.WriteLine("Event: Them Sp Thanh Cong.");
+        }
+
         public double grandTotal=0;
         private List<Product> productList = new List<Product>();
 
         public void AddProduct(Product product)
         {
             productList.Add(product);
-            Console.WriteLine("Them thanh cong");
+            EventThemSP();
         }
 
         public void DeleteProduct()
