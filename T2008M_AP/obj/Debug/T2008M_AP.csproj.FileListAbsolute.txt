@@ -1,0 +1,6 @@
+/Users/mac/RiderProjects/T2008M_AP/T2008M_AP/bin/Debug/T2008M_AP.exe
+/Users/mac/RiderProjects/T2008M_AP/T2008M_AP/bin/Debug/T2008M_AP.pdb
+/Users/mac/RiderProjects/T2008M_AP/T2008M_AP/obj/Debug/T2008M_AP.csprojAssemblyReference.cache
+/Users/mac/RiderProjects/T2008M_AP/T2008M_AP/obj/Debug/T2008M_AP.csproj.CoreCompileInputs.cache
+/Users/mac/RiderProjects/T2008M_AP/T2008M_AP/obj/Debug/T2008M_AP.exe
+/Users/mac/RiderProjects/T2008M_AP/T2008M_AP/obj/Debug/T2008M_AP.pdb

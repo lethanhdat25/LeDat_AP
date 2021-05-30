@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{FAE148F2-07D3-413F-8E37-CBE952FE99F0}</ProjectGuid>
+        <OutputType>Exe</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>T2008M_AP</RootNamespace>
+        <AssemblyName>T2008M_AP</AssemblyName>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Xml" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="All_AP\Blueprint_Garments\Areas.cs" />
+        <Compile Include="All_AP\Blueprint_Garments\Clothing.cs" />
+        <Compile Include="All_AP\Blueprint_Garments\Program.cs" />
+        <Compile Include="All_AP\Blueprint_Garments\TrendSetting.cs" />
+        <Compile Include="All_AP\ss1\Cart.cs" />
+        <Compile Include="All_AP\ss1\Diamon.cs" />
+        <Compile Include="All_AP\ss1\Fashion.cs" />
+        <Compile Include="All_AP\ss1\Product.cs" />
+        <None Include="All_AP\ss1\Program.cs" />
+        <None Include="Program.cs" />
+        <Compile Include="All_AP\ss2\Product.cs" />
+        <None Include="All_AP\ss2\Program.cs" />
+        <None Include="All_AP\ss4\DemoDelegate.cs" />
+        <Compile Include="All_AP\ss5\DemoEvent.cs" />
+        <None Include="All_AP\ss5\DemoThread.cs" />
+        <Compile Include="All_AP\tiendien\KhachHang.cs" />
+        <Compile Include="All_AP\tiendien\KhNuocNgoai.cs" />
+        <Compile Include="All_AP\tiendien\KhVietNam.cs" />
+        <None Include="All_AP\tiendien\Program.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>
